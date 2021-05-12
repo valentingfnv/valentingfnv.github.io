@@ -116,6 +116,16 @@
       .hide {
         display: none;
       }
+
+      @media screen and (max-device-width: 500px) {
+        .titlePost {
+          width: 300px;
+        }
+        #listOfPosts,
+        #pageButton {
+          padding: 0;
+        }
+      }
     </style>
 
     <div class="header-search">
@@ -196,5 +206,3 @@
     </script>
   </body>
 </html>
-
-<!-- document.querySelectorAll("#listOfPosts ul") -->

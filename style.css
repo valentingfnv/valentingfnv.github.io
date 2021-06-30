@@ -1,18 +1,20 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: rgb(44, 44, 44);
   font-family: "Quicksand", sans-serif;
 }
 
 .resume {
+  width: 60%;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 
 .leftBar {
-  width: 325px;
+  width: 30%;
   height: 800px;
   background-color: #182632;
   color: #8097a1;
@@ -21,7 +23,7 @@ body {
 }
 
 .rightBar {
-  width: 525px;
+  width: 70%;
   height: 800px;
   background-color: #f8f6f5;
   color: #182632;
@@ -82,7 +84,16 @@ span {
 
 @media screen and (max-device-width: 500px) {
   .resume {
+    width: 100%;
     flex-direction: column;
+  }
+
+  .leftBar {
+    width: 100%;
+  }
+
+  .rightBar {
+    width: 100%;
   }
 }
   

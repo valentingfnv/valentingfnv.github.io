@@ -5,13 +5,13 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-#resume {
+.resume {
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
 
-#leftBar {
+.leftBar {
   width: 325px;
   height: 800px;
   background-color: #182632;
@@ -20,7 +20,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#rightBar {
+.rightBar {
   width: 525px;
   height: 800px;
   background-color: #f8f6f5;
@@ -28,7 +28,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#contact {
+.contact {
   list-style-type: none;
   margin-top: 80px;
   line-height: 1.5;
@@ -51,14 +51,14 @@ span {
   color: #707070;
 }
 
-#photo {
+.photo {
   width: 210px;
   border-radius: 50%;
   margin-left: 20%;
   margin-top: 15%;
 }
 
-#about {
+.about {
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 50px;
@@ -75,7 +75,15 @@ span {
   font-size: 8px;
 }
 
-#b {
+.b {
   float: right;
   margin-right: 60px;
 }
+
+@media screen and (max-device-width: 500px) {
+  .resume {
+    flex-direction: column;
+  }
+}
+  
+
